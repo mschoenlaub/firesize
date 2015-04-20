@@ -11,16 +11,16 @@ Processes images on the fly using imagemagick.
 Prerequisites:
 
 * [Docker](https://docker.com/)
-* [Fig](http://www.fig.sh/)
+* [Compose](https://docker.com/)
 * [boot2docker](http://boot2docker.io/) if you're not running Linux
 
 Create the database and run migrations:
 
-    $ fig run web goose up
+    $ docker-compose run web goose up
 
 Start the app:
 
-    $ fig up
+    $ docker-compose up
 
 Get the boot2docker ip if you're not on Linux:
 
